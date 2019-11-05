@@ -273,7 +273,6 @@ def test_user_ajax_label_without_address(admin_user):
         ("John@example.com", "John", "", "John"),
         ("John@example.com", "", "Doe", "Doe"),
         ("John@example.com", "", "", "John@example.com"),
-        ("fail$fail,net", "123", "321", "123 321"),
     ],
 )
 def test_get_full_name_user_with_names(
