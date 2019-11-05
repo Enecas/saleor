@@ -94,7 +94,7 @@ def test_signup_form_user_exists(customer_user):
 
 def test_signup_view_create_user(client, db):
     url = reverse("account:signup")
-    data = {"email": "client@example.com", "password": "password"}
+    data = {"email": "fail@example.com", "password": "password"}
     response = client.post(url, data)
     assert User.objects.count() == 1
     new_user = User.objects.get(email="client@example.com")
