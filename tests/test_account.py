@@ -328,6 +328,7 @@ def test_get_full_name(email, first_name, last_name, full_name, address):
         ("John", "", "John"),
         ("", "Arnold", "Arnold"),
         ("", "", ""),
+        ("John", "Arnold", ""),
     ],
 )
 def test_get_user_first_name(
